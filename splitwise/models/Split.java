@@ -10,7 +10,7 @@ public class Split {
         this.amount = amount;
     }
 
-    public User getUserId(){
+    public User getUser(){
         return this.user;
     }
 

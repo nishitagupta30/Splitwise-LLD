@@ -14,13 +14,16 @@ public class Transaction {
         this.paidBy = paidBy;
         this.paidTo = paidTo;
         this.amount = amount;
-
-        this.paidBy.getBalance().updateBalance(paidTo.getUsername(), amount);
-        this.paidTo.getBalance().updateBalance(paidBy.getUsername(), -amount);
     }
 
     public String getTransactionId(){
         return this.transactionId;
+    }
+
+    public String toString(){
+        String s = paidBy.getUsername() + " should pay " + amount + " to " + paidTo.getUsername();
+        System.out.println(s);
+        return s;
     }
     
 }

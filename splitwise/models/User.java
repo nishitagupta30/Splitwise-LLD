@@ -26,4 +26,8 @@ public class User {
         return balance;
     }
 
+    public User getUser(){
+        return this;
+    }
+
 }
